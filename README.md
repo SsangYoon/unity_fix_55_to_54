@@ -24,3 +24,4 @@
 
 ## Copyright
 - Source : https://forum.unity.com/threads/behold-the-legendary-unity-5-5-to-5-4-downgrader.457905/
+- All rights are reserved by DoctorShinobi.
