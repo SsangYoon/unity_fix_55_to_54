@@ -49,11 +49,11 @@ namespace UnityDowngrader
                     {
                         if (f.EndsWith(".prefab"))
                             ConvertFrom55To54(f);
+                        if (f.EndsWith(".untiy"))
+                            ConvertFrom55To54(f);
                     }
                     FindFilesRecrusively(d);
                 }
-
-
             }
             catch (System.Exception excpt)
             {
@@ -233,8 +233,18 @@ namespace UnityDowngrader
                     if (lines[i + 14].Contains("- {fileID: 0}"))
                         lines.RemoveAt(i + 14);
 
+                    if (lines[i + 15].Contains("- {fileID: 0}"))
+                        lines.RemoveAt(i + 15);
+
                     // remove serialization version 2
                     lines.RemoveAt(i + 1);
+                    continue;
+                }
+
+                // Text and Image references
+                if (lines[i].StartsWith("  m_Script: {fileID:"))
+                {
+                    lines[i] = lines[i].Replace("f70555f144d8491a825f0804e09c671c", "f5f67c52d1564df4a8936ccd202a3bd8");
                     continue;
                 }
             }
