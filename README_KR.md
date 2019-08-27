@@ -1,4 +1,4 @@
-# Unity Fix  5.5 to 5.4
+# unity-fix-55-to-54
 
 [![Englsh](https://img.shields.io/badge/Language-English-red.svg)](README.md)
 ![Korean](https://img.shields.io/badge/Language-Korean-lightgrey.svg)
@@ -26,5 +26,4 @@
 
 
 ## 저작권
-- 출처 : https://forum.unity.com/threads/behold-the-legendary-unity-5-5-to-5-4-downgrader.457905/
-- 모든 저작권은 DoctorShinobi에게 있습니다.
+- [출처](https://forum.unity.com/threads/behold-the-legendary-unity-5-5-to-5-4-downgrader.457905/)
